@@ -29,7 +29,7 @@ Todo
                             <label class="control-label" for="categories">Group</label>
                             <select name="group_id"  class="form-control" >
                                 <option value="">Select a group</option>
-                                @foreach($todo_groups as $group)
+                                @foreach($todoGroups as $group)
                                     <option value="{{ $group->id }}">{{ $group->name }}</option>
                                 @endforeach
                             </select>

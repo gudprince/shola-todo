@@ -27,7 +27,7 @@ Todo
                             <label class="control-label" for="todo">Group</label>
                             <select name="todo_group_id" id="categories" class="form-control" >
                                 <option value="">Select a group</option>
-                                @foreach($todo_groups as $group)
+                                @foreach($todoGroups as $group)
                                     @if($group->id ==  $todo->todo_group_id)
                                     <option value="{{$group->id}}" selected>{{$group->name}}</option>
                                     @else
